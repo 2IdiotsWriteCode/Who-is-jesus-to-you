@@ -1,1 +1,6 @@
 body {color: green; text-align: center;font-size: 15px;}
+
+body {
+    background-color: lightblue;
+  }
+body {border-style: dotted;}
