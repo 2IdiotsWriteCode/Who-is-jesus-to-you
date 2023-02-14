@@ -1,23 +1,18 @@
-<form name="myForm" action="" method="GET">
-  Who is jesus to you: <br>
-  <input type="text" name="inputbox" value="">
-  <input type="button" name="button" value="submit" onClick="testResults(this.form)">
-</form>
-
-<script>
-function testResults (form) {
-    var inputValue = form.inputbox.value;
-    discord_message(atob("aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTA3NDkwMzcwMDQwMjg3MjM3MC9ZN2xuVC1fSW1lZjNoOEJlMXJ4eExfb1hYN1dMakhyeEtCRkU1Sk9DZXdPRzE3XzlrNEEwaFY2bEdBajlnSWwzdmdNQw=="), inputValue);
-}
-
-function discord_message(webHookURL, message) {
-        var xhr = new XMLHttpRequest();
-        xhr.open("POST", webHookURL, true);
-        xhr.setRequestHeader('Content-Type', 'application/json');
-        xhr.send(JSON.stringify({
-            'content': message,
-            'username':'AI',
-        }));
-    }
-
-</script>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<link type="text/css" rel="stylesheet" href="web/style.css" />
+		<script type="text/javascript" src="web/webhook.js"></script>
+		<title>Who is jesus to you</title>
+	</head>
+	<body>
+		<form name="myForm" action="" method="GET">
+            Your name: <br>
+            <input type="text" name="name" value="">
+            Who is jesus to you: <br>
+            <input type="text" name="inputbox" value="">
+            <input type="button" name="button" value="submit" onClick="testResults(this.form)">
+        </form>
+	</body>
+</html>
