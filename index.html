@@ -1,0 +1,23 @@
+<form name="myForm" action="" method="GET">
+  Who is jesus to you: <br>
+  <input type="text" name="inputbox" value="">
+  <input type="button" name="button" value="submit" onClick="testResults(this.form)">
+</form>
+
+<script>
+function testResults (form) {
+    var inputValue = form.inputbox.value;
+    discord_message("https://discord.com/api/webhooks/1074425809269432390/nm7yZWldJQ1NsxsomenYPDufuW_5k6-VJkyZuTtvee9obt_K_1WDTluLuHYVrJduMazY", inputValue);
+}
+
+function discord_message(webHookURL, message) {
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", webHookURL, true);
+        xhr.setRequestHeader('Content-Type', 'application/json');
+        xhr.send(JSON.stringify({
+            'content': message,
+            'username':'AI',
+        }));
+    }
+
+</script>
