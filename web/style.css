@@ -1,6 +1,19 @@
-body {color: green; text-align: center;font-size: 15px;}
+body {color: #7289da; text-align: center;font-size: 15px;}
+
+button {
+  background-color: #282b30;
+  border: none;
+  color: gray;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 
 body {
-    background-color: lightblue;
+    background-color: #36393e;
   }
 body {border-style: dotted;}
