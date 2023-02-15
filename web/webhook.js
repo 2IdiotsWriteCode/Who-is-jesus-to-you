@@ -17,3 +17,5 @@ function discord_message(name, message, webHookURL) {
         'username': name,
     }));
 }
+
+//test
