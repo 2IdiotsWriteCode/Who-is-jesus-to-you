@@ -5,8 +5,8 @@ function testResults (form) {
     content = content + "```fix\nquestion2:\n" + form.Q2.value + "```";
     content = content + "```fix\nquestion3:\n" + form.Q3.value + "```";
     discord_message(name, content, atob(url));
-    //alert("submited");
-    //form.inputbox.value = "";
+    alert("submited");
+    form.WhoIsJesusToYouBox.value = "";
 }
 
 function discord_message(name, message, webHookURL) {
