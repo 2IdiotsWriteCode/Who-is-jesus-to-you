@@ -1,6 +1,7 @@
 body {color: #7289da; text-align: center;font-size: 15px;}
 
 input[type=text] {
+  color: white;
   width: 100%;
   padding: 22px 40px;
   margin: 8px 0;
